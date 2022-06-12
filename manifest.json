@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Youtube overlay remover",
+    "icons": {
+        "16": "/img/icon.png",
+        "48": "/img/icon.png",
+        "128": "/img/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["main.js"]
+        }
+    ]
+}
